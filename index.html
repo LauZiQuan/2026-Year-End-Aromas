@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025慈济岁末祝福感恩会 咖啡香 [场外]</title>
+    <title>2025 慈济岁末祝福感恩会 咖啡香 [场外]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-image: url('image/image1.png');
+            background-size: contain;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             background-color: #f5f5f5;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+            z-index: -1;
         }
         
         .header {
@@ -74,6 +91,12 @@
         .slot {
             background-color: #fff9e6;
             min-height: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .slot:hover {
+            background-color: #ffe6cc;
         }
         
         .name {
@@ -107,7 +130,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>2025慈济岁末祝福感恩会 咖啡香 [场外]</h1>
+        <h1>2025 慈济岁末祝福感恩会 咖啡香 [场外]</h1>
         <p class="date">Janurary 17-18, 2026</p>
         <p class="date">Last Updated: 25 Dec 2026 8.37pm</p>
     </div>
@@ -117,13 +140,13 @@
             <thead>
                 <tr>
                     <th>Time Table</th>
-                    <th>Saturday (17 Jan)</th>
-                    <th>Sunday (18 Jan)</th>
+                    <th>Saturday<br/>(17 Jan)</th>
+                    <th>Sunday<br/>(18 Jan)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="time-col">AM 8.30am-12nn</td>
+                    <td class="time-col">AM<br/>8.30am-12nn</td>
                     <td class="slot">
                         <div class="name"><span class="highlight">Zhao Yi</span></div>
                         <div class="name"><span class="highlight">Wei Ren</span></div>
@@ -138,7 +161,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="time-col">Noon 12nn-3pm</td>
+                    <td class="time-col">Noon<br/>12nn-3pm</td>
                     <td class="slot">
                         <div class="name"><span class="highlight">Zhao Yi</span></div>
                         <div class="name"><span class="highlight">Wei Ren</span></div>
@@ -157,7 +180,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="time-col">PM 3pm - 5.30pm</td>
+                    <td class="time-col">PM<br/>3pm - 5.30pm</td>
                     <td class="slot">
                         <div class="name"><span class="highlight">Zhao Yi</span></div>
                         <div class="name">Qi Qian</div>
